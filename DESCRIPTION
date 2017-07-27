@@ -1,0 +1,13 @@
+Package: RExo
+Type: Package
+Title: Utilities for Exoplanet Astronomy in R 
+Version: 0.1.0
+Author: Ashlee Wilkins
+Maintainer: Ashlee Wilkins <awilkins@astro.umd.edu>
+Description: Here are some assorted little functions I use when 
+    working with exoplanet data (so far, mostly limited to 
+    atmospheric characterization via transit spectroscopy).
+License: Uh
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.0.1
