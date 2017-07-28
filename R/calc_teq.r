@@ -20,23 +20,23 @@
 
 calc_teq <- function(tstar,rstar,dplanet,alb=NA){
 
-  rsolar = 6.957e10   # solar radius in cm
-  au = 1.496e13       # AU in cm
+  rsolar <- 6.957e10   # solar radius in cm
+  au <- 1.496e13       # AU in cm
 
   # convert rstar, dplanet to cm
-  rstar_cm = rstar * rsolar # rsolar --> cm
-  dplanet_cm = dplanet * au # AU --> cm
+  rstar_cm <- rstar * rsolar # rsolar --> cm
+  dplanet_cm <- dplanet * au # AU --> cm
 
   # if no albedo is supplied, then just set = 0.0
   if (is.na(alb)) {
-    alb = 0.0
+    alb <- 0.0
   }
 
   # calculate teq^4
-  teq_planet4th = (tstar)^4.0 * (1.0 - alb) * (rstar_cm / (2.0 * dplanet_cm))^2.0
+  teq_planet4th <- (tstar)^4.0 * (1.0 - alb) * (rstar_cm / (2.0 * dplanet_cm))^2.0
 
   # calculate teq
-  teq_planet = teq_planet4th^0.25
+  teq_planet <- teq_planet4th^0.25
 
   # return the planet equilibrium temp
   return(teq_planet)
